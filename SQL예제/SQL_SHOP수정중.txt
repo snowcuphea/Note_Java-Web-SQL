@@ -1,0 +1,195 @@
+   create table TB_MEM(
+	MEM_ID varchar2(50) primary key,
+     MEM_NM varchar2(50) not null,
+     MEM_CD varchar2(50) not null,
+        PWD varchar2(50) not null,
+        PWD_HINT varchar2(50) not null,
+       PWD_HINT_ANS varchar2(50) not null,
+       SSN number not null,
+       BIRTH_DT number,
+       MALE_FLG char(1) not null,
+       TEL_NO char(11),
+    CELL_NO char(12),
+    ADDR varchar2(200) not null,
+ EMAIL varchar2(50),
+ EMAIL_RCV_FLG char(1),
+ MEM_REG_DTM varchar2(50));
+
+ alter table TB_MEM
+ add constraint MEM_SSN_UNI unique(SSN);
+
+  alter table TB_MEM
+  add constraint MEM_CD_CK check(MEM_CD in('Silver'
+
+
+
+
+
+
+
+
+ create table TB_ORDER(
+    ORD_NO varchar2(50) primary key,
+    MEM_ID varchar2(50),
+  ORD_AMT number not null,
+  RCVR_NM varchar2(20) not null,
+  RCYR_TEL_NO varchar2(20) not null,
+  RCVR_ADDR varchar2(100) not null,
+  DLV_CORP_NO varchar2(20) not null,
+  DLV_REQ varchar2(100) not null,
+  ORD_STAT_CD varchar2(20) not null,
+  ORD_DTM varchar(20) not null )
+ ;
+
+
+  create table TB_PRODUCT(
+  PRD_NO varchar2(50) primary key,
+  PRD_NM varchar2(50),
+  CATEGORY_NO varchar2(50),
+  PRD_DES varchar2(100),
+  SELL_PRC_UNIT number,
+  SELL_START_DT varchar2(50),
+  SELL_END_DT varchar2(50),
+ DLV_CONSTRAINT varchar2(50),
+   AS_FLG varchar2(50),
+  RETURN_FLG varchar2(50),
+   IMG_ORG_FILE_NM varchar2(50),
+   IMG_GEN_FILE_NM varchar2(50),
+   REG_ID varchar2(50),
+   REG_DTM varchar2(50) );
+
+	
+
+create table TB_ORDER(
+	ORD_NO
+	MEM_ID
+	RCVR_NM
+	
+
+
+create table TB_ORDER_PRODUCT(
+	ORD_NO varchar2(50),
+	PRD_NO varchar2(50),
+	QTY number );
+
+alter table TB_ORDER
+add constraint ORD_ID_FK foreign key(MEM_ID)
+references TB_MEM(MEM_ID);
+
+alter table TB_ORDER_PRODUCT
+add constraint PRO_DRD_NO_FK foreign key(ORD_NO)
+references TB_ORDER(ORD_NO);
+
+alter table TB_ORDER_PRODUCT
+add constraint PRO_PRD_NO foreign key(PRD_NO)
+references TB_PRODUCT(PRD_NO);
+
+INSERT INTO TB_MEM(MEM_ID, MEM_NM, MEM_CD,
+ PWD, PWD_HINT, PWD_HINT_ANS, SSN, BIRTH_DT, MALE_FLG,
+ TEL_NO, CELL_NO, ADDR, EMAIL, EMAIL_RCV_FLG, MEM_REG_DTM)      
+VALUES('user01', '홍길동', 'Gold', 'user01', '초등학교는?',
+ '서울초등학교', '8010101234567', '19801010', 'F',
+ '02-555-4567', '010-234-4567', 
+'서울시 서초구 서초동 서초아파트 101동 1001호',
+ 'abcd@email.com', 'Y',
+ to_char(sysdate, 'YYYYMMDDHH24MISS'));
+
+
+INSERT INTO TB_PRODUCT(PRD_NO, PRD_NM, CATEGORY_NO, 
+PRD_DES, SELL_PRC_UNIT, SELL_START_DT, SELL_END_DT, 
+DLV_CONSTRAINT, AS_FLG, RETURN_FLG,
+ IMG_ORG_FILE_NM, IMG_GEN_FILE_NM, REG_ID, REG_DTM) 
+VALUES('PRD000000025', '메이퀸 진주 조끼', 'CAT000000004', 
+'가볍게 걸치기만해도 멋스러운 아이템!', 
+49300, '20140201', '20141201', '국내 배송만 됩니다.', 'Y', 'Y', 
+ 'outer_image5.jpg', 'outer_image5.jpg', 'admin',
+ to_char(sysdate, 'YYYYMMDDHH24MISS'))  ;
+
+
+INSERT INTO TB_MEM(MEM_ID, MEM_NM, MEM_CD,
+ PWD, PWD_HINT, PWD_HINT_ANS, SSN, BIRTH_DT, MALE_FLG,
+ TEL_NO, CELL_NO, ADDR, EMAIL, EMAIL_RCV_FLG, MEM_REG_DTM)      
+VALUES('letitgo', '민정', 'VIP', '1111', '대학교는?',
+ '멀캠대학교', '1111101234567', '19940915', 'F',
+ '02-555-4567', '010-234-4567', 
+'서울시 서초구 서초동 서초아파트 101동 1001호',
+ 'mulcam@email.com', 'Y',
+ to_char(sysdate, 'YYYYMMDDHH24MISS'));
+
+
+
+
+
+
+INSERT INTO TB_MEM(MEM_ID, MEM_NM, MEM_CD,
+ PWD, PWD_HINT, PWD_HINT_ANS, SSN, BIRTH_DT, MALE_FLG,
+ TEL_NO, CELL_NO, ADDR, EMAIL, EMAIL_RCV_FLG, MEM_REG_DTM)      
+VALUES('letitgo1', '김일', 'Silver', '1111', '대학교는?',
+ '멀캠대학교', '2222201234567', '19940915', 'F',
+ '02-555-4567', '010-234-4567', 
+'서울시 서초구 서초동 서초아파트 101동 1002호',
+ 'mulcam@email.com', 'Y',
+ to_char(sysdate, 'YYYYMMDDHH24MISS'));
+
+
+INSERT INTO TB_MEM(MEM_ID, MEM_NM, MEM_CD,
+ PWD, PWD_HINT, PWD_HINT_ANS, SSN, BIRTH_DT, MALE_FLG,
+ TEL_NO, CELL_NO, ADDR, EMAIL, EMAIL_RCV_FLG, MEM_REG_DTM)      
+VALUES('letitgo2', '김이', 'Gold', '2222', '대학교는?',
+ '멀캠대학교', '2332201234567', '19940915', 'F',
+ '02-555-4567', '010-234-4567', 
+'서울시 서초구 서초동 서초아파트 101동 1002호',
+ 'mulcam@email.com', 'Y',
+ to_char(sysdate, 'YYYYMMDDHH24MISS'));
+
+
+INSERT INTO TB_MEM(MEM_ID, MEM_NM, MEM_CD,
+ PWD, PWD_HINT, PWD_HINT_ANS, SSN, BIRTH_DT, MALE_FLG,
+ TEL_NO, CELL_NO, ADDR, EMAIL, EMAIL_RCV_FLG, MEM_REG_DTM)      
+VALUES('letitgo3', '김삼', 'VIP', '3333', '대학교는?',
+ '멀캠대학교', '3333301234567', '19940915', 'F',
+ '02-555-4567', '010-234-4567', 
+'서울시 서초구 서초동 서초아파트 101동 1003호',
+ 'mulcam@email.com', 'Y',
+ to_char(sysdate, 'YYYYMMDDHH24MISS'));
+
+
+INSERT INTO TB_MEM(MEM_ID, MEM_NM, MEM_CD,
+ PWD, PWD_HINT, PWD_HINT_ANS, SSN, BIRTH_DT, MALE_FLG,
+ TEL_NO, CELL_NO, ADDR, EMAIL, EMAIL_RCV_FLG, MEM_REG_DTM)      
+VALUES('letitgo4', '김사', 'VVIP', '4444', '대학교는?',
+ '멀캠대학교', '4444401234567', '19940915', 'F',
+ '02-555-4567', '010-234-4567', 
+'서울시 서초구 서초동 서초아파트 101동 1004호',
+ 'mulcam@email.com', 'Y',
+ to_char(sysdate, 'YYYYMMDDHH24MISS'));
+
+
+INSERT INTO TB_MEM(MEM_ID, MEM_NM, MEM_CD,
+ PWD, PWD_HINT, PWD_HINT_ANS, SSN, BIRTH_DT, MALE_FLG,
+ TEL_NO, CELL_NO, ADDR, EMAIL, EMAIL_RCV_FLG, MEM_REG_DTM)      
+VALUES('letitgo5', '김오', 'Guest', '5555', '대학교는?',
+ '멀캠대학교', '5555501234567', '19940915', 'F',
+ '02-555-4567', '010-234-4567', 
+'서울시 서초구 서초동 서초아파트 101동 1005호',
+ 'mulcam@email.com', 'Y',
+ to_char(sysdate, 'YYYYMMDDHH24MISS'));
+
+create sequence order_seq;
+
+insert into TB_ORDER(ORD_NO,MEM_ID, ORD_AMT,
+RCVR_NM,RCYR_TEL_NO, RCVR_ADDR,DLV_CORP_NO,DLV_REQ,
+ORD_STAT_CD,ORD_DTM)
+values(10,'letitgo1',15000,
+'김일','010-234-4567','일산동구 백석동' ,'CJ대한통운','부재시문앞',
+'A01',to_char(sysdate, 'YYYYMMDDHH24MISS'));
+
+insert into TB_ORDER_PRODUCT(ORD_NO,PRD_NO)
+values(10,'PRD000000005')
+
+
+
+ alter table TB_ORDER_PRODUCT
+ drop constraint  PRO_PRD_NO;
+
+drop table TB_PRODUCT;

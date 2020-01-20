@@ -1,0 +1,55 @@
+select e.empno, e.ename, e.sal, e.deptno,e.job, d.loc_code
+from emp e,  dept d
+where e.deptno = d.deptno and e.job ='SALESMAN' ;
+
+select e.first_name || e.last_name || '의 연봉은'  || e.salary ||  '입니다.'
+from departments d, employees e
+where e.department_id = d.department_id and
+d.department_name = 'IT'
+order by e.salary asc;
+
+select e.employee_id, e.first_name, j.job_title, d.department_name
+from employees e, jobs j, departments d, locations l
+where e.department_id = d.department_id 
+and e.job_id = j.job_id
+and d.location_id = l.location_id
+and l.city = 'Seattle'
+
+select j.job_title "Job", sum(e.salary) "급여"
+from jobs j, employees e
+where e.job_id = j.job_id and
+j.job_title != 'Representative'
+group by j.job_title
+having sum(e.salary) > 30000
+order by "급여" asc;
+
+각 부서 이름 별로 2005년 이전에 입사한 직원들의인원수를 조회
+select d.department_name "부서명", count(e.employee_id) "인원수"
+from employees e, departments d
+where e.department_id = d.department_Id
+and e.hire_date < '2005/01/01'
+group by d.department_name;
+
+사원수가 3명 이상의 사원을 포함하고 있는 부서의 부서번호(department_id), 
+부서이름(department_name), 사원 수, 최고급여, 최저급여, 평균급여, 급여총액을
+ 조회하여 출력하십시오. 
+출력 결과는 부서에 속한 사원의 수가 많은 순서로 출력하고,
+컬럼명은 아래 결과와 동일하게 출력하십시오. 
+
+select d.department_id "부서번호", d.department_name "부서명", 
+count(e.employee_id) "인원수", max(e.salary) "최고급여",
+min(e.salary) "최저급여", avg(e.salary) "평균급여", sum(e.salary) "급여총액"
+from employees e, departments d
+where e.department_id = d.department_id 
+group by d.department_id, d.department_name
+having count(e.employee_id) >3
+order by "인원수" desc;
+
+
+
+
+
+select ename, deptno, sal, hiredate
+from emp
+where sal in ( select min(sal) from emp
+		group by deptno);
