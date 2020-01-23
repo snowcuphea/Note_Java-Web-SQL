@@ -44,18 +44,18 @@
             ↑                              의존성주입을 처리한다. 당장 쓰지 않는 것도 다 만들고 시작한다.
 * WebApplicationContext
 
-![image-20200122114325476](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200122114325476.png)
 
 
+![image-20200122114325476](images/image-20200122114325476.png)
 
 BeanFactory, ApplicationContext 둘 다 객체 생성 시점은 다르지만,
 이미 만들어진 객체는 새로 만들지 않는다는 점이 같다. 똑같은 객체는 하나만 만든다.
 
 같은 경로인데 다른 객체로 만들고 싶다면? `scope="prototype"` 해주면 된다.
 
-![image-20200122132237536](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200122132237536.png)
 
 
+![image-20200122132237536](images/image-20200122132237536.png)
 
 
 
@@ -69,39 +69,37 @@ BeanFactory, ApplicationContext 둘 다 객체 생성 시점은 다르지만,
 
    
 
-![image-20200122135607210](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200122135607210.png)
+![image-20200122135607210](images/image-20200122135607210.png)
 
-![image-20200122135545427](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200122135545427.png)
+![image-20200122135545427](images/image-20200122135545427.png)
 
 실행결과 : 
 
-![image-20200122135626268](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200122135626268.png)
 
 
+![image-20200122135626268](images/image-20200122135626268.png)
 
 
 
 2) DI (Dependency Injection)
 
-![image-20200122143709436](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200122143709436.png)
-
-![image-20200122144244810](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200122144244810.png)
+![image-20200122143709436](images/image-20200122143709436.png)
 
 
+
+![image-20200122144244810](images/image-20200122144244810.png)
 
 오류가 뜨기 때문에 xml 파일에 다음과 같이 추가해줘야 한다. 현재 InsaImpl파일에 기본 생성자가 없는 것이다.
 
 InsaImpl에서 받는 매개변수 [MemberDAO dao]는 reference 속성이기 때문에 ref 로 선택해준다. (value속성일 경우는 value)
 
-![image-20200122144625695](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200122144625695.png)
+
+
+![image-20200122144625695](images/image-20200122144625695.png)
 
 
 
-
-
-
-
-![image-20200122144717632](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200122144717632.png)
+![image-20200122144717632](images/image-20200122144717632.png)
 
 이랬던 코드가
 
@@ -115,15 +113,78 @@ InsaImpl에서 받는 매개변수 [MemberDAO dao]는 reference 속성이기 때
 
 alt + shift + t > Extract Interface > 
 
-![image-20200122161432477](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200122161432477.png)
 
 
+![image-20200122161432477](images/image-20200122161432477.png)
 
 [ Dice 문제 상속 괸계 ]
 
 
 
-![image-20200122162433590](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200122162433590.png)
+
+
+![image-20200122162433590](images/image-20200122162433590.png)
+
+
+
+스프링 예제 - Service가 Logic을 사용하는 상황
+
+![image-20200123093818793](images/image-20200123093818793.png)
+
+![image-20200123093843539](images/image-20200123093843539.png)
+
+매개변수 개수와 constructor-arg의 개수가 같다.
+String name과 String msg는 value형이므로 value로 적어준다. 
+
+
+
+![image-20200123094523654](images/image-20200123094523654.png)
+
+나는 분명 Test 를 실행시켰는데 (관련 파일은 Logic과 service) bean.xml에 있는 InsaImpl 과 Player 까지 다 생성이 되었다. 이처럼 (사용하지 않더라도)  xml에 있는 생성자를 모두 만들어 놓고 시작한다는 것을 알 수 있다. 
+
+---
+
+![image-20200123131859905](images/image-20200123131859905.png)
+
+
+
+### setter 인젝션
+
+* property로 적용한다 
+* 기본생성자와 setter를 생성해야 한다.
+* <bean>을 생성할 때 <constructor-args>엘리먼트가 없으면 기본 생성자를 호출해서 객체를 생성한다. <property>에서 name속성에 정의한 dao???? <property>에서 name속성에 정의한 dao의 첫 글자를 대문자로 변경하고 set을 접두사로 추가한 메소드를 찾아서 호출
+  ex) name 속성이 dao면 set + Dao
+
+* 
+
+
+
+* 인젝션을 섞어서 사용할 수 있다. 단, 사용할 때 개수에 해당하는 생성자를 만들어야 한다. 
+
+![image-20200123141418782](images/image-20200123141418782.png)
+
+
+
+* ![image-20200123141334247](images/image-20200123141334247.png)
+
+
+
+
+
+* xml 작성 시 리스트의 하위는 모두 list로 작성한다.
+  값들은 모두 value로 적는다. 
+
+* 하나의 entry는 key와 value 표시 
+
+  ![image-20200123143154796](images/image-20200123143154796.png)
+
+  #### 실행 결과
+
+![image-20200123143248416](images/image-20200123143248416.png)
+
+
+
+----
 
 
 

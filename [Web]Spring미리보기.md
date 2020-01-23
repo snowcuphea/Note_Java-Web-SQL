@@ -6,17 +6,17 @@ Spring.io
 
 
 
-![image-20200120093112108](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200120093112108.png)
+![image-20200120093112108](images/image-20200120093112108.png)
 
-![image-20200120093213374](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200120093213374.png)
-
-![image-20200120093400172](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200120093400172.png)
+![image-20200120093213374](images/image-20200120093213374.png)
 
 
 
-![image-20200120093454700](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200120093454700.png)
+![image-20200120093400172](images/image-20200120093400172.png)
 
 
+
+![image-20200120093454700](images/image-20200120093454700.png)
 
 오류가 발생했을 경우, 오류 메세지를 확인하고 잘못된 부분을 체크해야 한다.
 
