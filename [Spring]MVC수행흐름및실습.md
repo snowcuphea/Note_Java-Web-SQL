@@ -244,7 +244,7 @@ web.xml에 springmvc2.xml 등록된 상태
 | 2    | `HandlerMapping`    | 클라이언트가 요청한 path를 분석해서 어떤 컨트롤러를 실행해야 하는지 찾아서 `DispatcherServlet` 으로 넘겨주는 클래스 |
 | 3    | `Controller`        | 클라이언트의 요청을 처리하는 클래스<br />DAO의 메소드를 호출하는 기능을 정의 |
 | 4    | `ModelAndView`      | `Controller` 에서 DAO의 메소드 실행결과로 만들어진 데이터에 대한 정보나 응답할 view에 대한 정보를 갖고 있는 객체 |
-| 5    | `ViewResolver`      | `ModelAndView` 에 저장된 `view`의 정보를 이용해서 `DispatcherServlet` d에게 실제 어떤 `view`를 실행해야 하는지 정보를 넘겨주는 객체 |
+| 5    | `ViewResolver`      | `ModelAndView` 에 저장된 `view`의 정보를 이용해서 `DispatcherServlet`에게 실제 어떤 `view`를 실행해야 하는지 정보를 넘겨주는 객체 |
 
 * 스프링 MVC를 구축하면 위의 클래스들이 자동으로 실행되며 일처리를 한다. 
   따라서 필요에 따라 스프링에서 지원하는 `ViewResolver`나 `HandlerMapping` 객체를 다양하게 등록하고 사용할 수 있다.

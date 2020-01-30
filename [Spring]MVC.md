@@ -157,6 +157,12 @@ copy projects into workspace 해제하면 아예 원본 경로가 넘어오기 �
 
 web.xml 수정한다. 
 
+
+
+appServlet밑의 servlet-context.xml 복사해서 가져와서 config에 붙여넣고, 이름 바꿔서 spring-config.xml파일로 만든다.
+
+![image-20200130093705734](images/image-20200130093705734.png)
+
 ![image-20200129134010334](images/image-20200129134010334.png)
 
 ![image-20200129135128044](images/image-20200129135128044.png)
