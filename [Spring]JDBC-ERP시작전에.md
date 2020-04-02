@@ -1,6 +1,6 @@
 #### src 밑에 config 패키지 만ㄷ르고, erp.xml 추가
 
-![image-20200130154932091](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200130154932091.png)
+![image-20200130154932091](images/image-20200130154932091.png)
 
 복붙해서 가져와서 이름만 erp.xml로 바꾼다.
 

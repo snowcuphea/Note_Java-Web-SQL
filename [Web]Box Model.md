@@ -1,10 +1,10 @@
 ## Box Model
 
-![image-20200103131322781](C:/Users/student/Desktop/TIL/images/image-20200103131322781.png)
+![image-20200103131322781](images/image-20200103131322781.png)
 
-![image-20200103132208672](C:/Users/student/Desktop/TIL/images/image-20200103132208672.png)
+![image-20200103132208672](images/image-20200103132208672.png)
 
-![image-20200103132225966](C:/Users/student/Desktop/TIL/images/image-20200103132225966.png)
+![image-20200103132225966](images/image-20200103132225966.png)
 
 ----
 
@@ -14,7 +14,7 @@
 
 
 
-![image-20200103143557466](C:/Users/student/Desktop/TIL/images/image-20200103143557466.png)
+![image-20200103143557466](images/image-20200103143557466.png)
 
 
 
@@ -30,17 +30,17 @@ border-radius : 20px; /*둥근 가장자리*/
 
 
 
-![image-20200103154601935](C:/Users/student/Desktop/TIL/images/image-20200103154601935.png)
+![image-20200103154601935](images/image-20200103154601935.png)
 
 
 
 이렇게 글자가 너무 많아서 넘쳐 흐를 경우 다음과 같이 해결한다.
 
-![image-20200103154851722](C:/Users/student/Desktop/TIL/images/image-20200103154851722.png)
+![image-20200103154851722](images/image-20200103154851722.png)
 
-![image-20200103154929393](C:/Users/student/Desktop/TIL/images/image-20200103154929393.png)
+![image-20200103154929393](images/image-20200103154929393.png)
 
-![image-20200103155346296](C:/Users/student/Desktop/TIL/images/image-20200103155346296.png)
+![image-20200103155346296](images/image-20200103155346296.png)
 
 ---
 
@@ -64,10 +64,6 @@ border-radius : 20px; /*둥근 가장자리*/
 ---
 
 
-
-**<오류해결>** 톰캣 포트와 충돌이 일어나는 경우 작업관리자에서 Java선택해서 작업끝내기 하면 된다. 
-
-![image-20200106102137683](C:\Users\student\AppData\Roaming\Typora\typora-user-images\image-20200106102137683.png)
 
 ---
 

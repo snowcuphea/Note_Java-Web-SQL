@@ -3,7 +3,7 @@
 모든 요청의 하나의 통로로만 들어올 수 있도록 관리하는 것 : front controller
 모든 요청을 한 곳에서 처리할 수 있도록 함
 
-![image-20200128094531166](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200128094531166.png)
+![image-20200128094531166](images/image-20200128094531166.png)
 
 웹 관련 라이브러리가 없기 때문에 오류가 뜨고, 따로 라이브러리 추가해줘야 한다. 
 
@@ -13,27 +13,27 @@
 
 ### [서버 라이브러리 추가하기]
 
-![image-20200128094849081](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200128094849081.png)
+![image-20200128094849081](images/image-20200128094849081.png)
 
-![image-20200128094931477](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200128094931477.png)
+![image-20200128094931477](images/image-20200128094931477.png)
 
-![image-20200128094825453](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200128094825453.png)
+![image-20200128094825453](images/image-20200128094825453.png)
 
-![image-20200128095014918](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200128095014918.png)
+![image-20200128095014918](images/image-20200128095014918.png)
 
-![image-20200128095113787](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200128095113787.png)
+![image-20200128095113787](images/image-20200128095113787.png)
 
-![image-20200128095159597](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200128095159597.png)
+![image-20200128095159597](images/image-20200128095159597.png)
 
-![image-20200128094653173](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200128094653173.png)
+![image-20200128094653173](images/image-20200128094653173.png)
 
 
 
-![image-20200128094709102](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200128094709102.png)
+![image-20200128094709102](images/image-20200128094709102.png)
 
-![image-20200128095233625](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200128095233625.png)
+![image-20200128095233625](images/image-20200128095233625.png)
 
-![image-20200128095245098](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200128095245098.png)
+![image-20200128095245098]images/image-20200128095245098.png)
 
 에러 사라졌다. 이제 FrontServlet을 본격적으로 만들어보자. 
 

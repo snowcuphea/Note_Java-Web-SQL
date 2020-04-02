@@ -16,29 +16,29 @@ name 과 value가 있는 map을 생성해서 해당 값이 있는 경우 요청�
 
 ## [ 설정파일 만들기 ]
 
-![Untitled](C:\Users\LG\Desktop\Note\Spring\Untitled.png)
+![Untitled](images/Untitled00.png)
 
 ## [ 나만의 라이브러리 추가 ]
 
-![Untitled 1](C:\Users\LG\Desktop\Note\Spring\Untitled 1.png)
+![Untitled 1](images/Untitled 1.png)
 
 
 
-![Untitled 2](C:\Users\LG\Desktop\Note\Spring\Untitled 2.png)
+![Untitled 2](images/Untitled 2.png)
 
-![Untitled 3](C:\Users\LG\Desktop\Note\Spring\Untitled 3.png)
+![Untitled 3](images/Untitled 3.png)
 
-![Untitled 4](C:\Users\LG\Desktop\Note\Spring\Untitled 4.png)
-
-
-
-![Untitled 5](C:\Users\LG\Desktop\Note\Spring\Untitled 5.png)
-
-![Untitled 6](C:\Users\LG\Desktop\Note\Spring\Untitled 6.png)
+![Untitled 4](images/Untitled 4.png)
 
 
 
-![Untitled 7](C:\Users\LG\Desktop\Note\Spring\Untitled 7.png)
+![Untitled 5](images/Untitled 5.png)
+
+![Untitled 6](images/Untitled 6.png)
+
+
+
+![Untitled 7](images/Untitled 7.png)
 
 
 

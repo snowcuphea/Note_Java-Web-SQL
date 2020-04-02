@@ -6,9 +6,9 @@
 
 was의 자원을 METO-INF에 놓는다. 
 
-![image-20200131093418354](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200131093418354.png)
+![image-20200131093418354](images/image-20200131093418354.png)
 
-![image-20200131093712278](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200131093712278.png)
+![image-20200131093712278](images/image-20200131093712278.png)
 
 oracle 8 9 10 선택하고 ㄹ리소스에 등록된거 그대로 카피
 

@@ -4,7 +4,7 @@
 
 1. JSP파일 만들 때 세팅해주기 
 
-![image-20200129153603844](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200129153603844.png)
+![image-20200129153603844](images/image-20200129153603844.png)
 
 
 

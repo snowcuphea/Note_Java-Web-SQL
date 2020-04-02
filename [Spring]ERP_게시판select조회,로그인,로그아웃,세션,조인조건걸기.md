@@ -5,12 +5,12 @@
 파라미터타입은 스트링. 하나를 가져올꺼니까
 대부분 스트링이다.
 
-![image-20200203092359203](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200203092359203.png)
+![image-20200203092359203](images/image-20200203092359203.png)
 
 2. DAO에 메소드를 하나 만든다.  DAO는 sql문 하나당 하나씩 만들어져야 한다.
    DAOImpl도 해당 부분 추가 및 수정해준다. 
 
-   ![image-20200203092431404](C:\Users\LG\Desktop\Note\[Spring]ERP_Board_CategorySearch)
+   ![image-20200402152156844](images/image-20200402152156844.png)
 
 
 

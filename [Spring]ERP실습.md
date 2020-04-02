@@ -10,7 +10,7 @@ spring-config.xml는 spring>appServlet > 에 있는 파일을 복사해서 가�
 
 ### web.xml에서 설정파일 기본 인식 위치를 수정해주기
 
-![image-20200130113046963](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200130113046963.png)
+![image-20200130113046963](images/image-20200130113046963.png)
 
 
 
@@ -26,7 +26,7 @@ spring-config.xml는 spring>appServlet > 에 있는 파일을 복사해서 가�
 
  템플릿 등록해준다. 
 
-![image-20200130113249055](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200130113249055.png)
+![image-20200130113249055](images/image-20200130113249055.png)
 
 
 
@@ -38,19 +38,19 @@ jsp 파일에 위에 라이브러리 추가해줘야한다.
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 ```
 
-![image-20200130113452257](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200130113452257.png)
+![image-20200130113452257](images/image-20200130113452257.png)
 
 
 
-![image-20200130113513971](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200130113513971.png)
+![image-20200130113513971](images/image-20200130113513971.png)
 
-![image-20200130113712859](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200130113712859.png)
+![image-20200130113712859](images/image-20200130113712859.png)
 
 
 
 ### 컨트롤러 파일을 만들어 주고, 어노테이션 해준다.
 
-![image-20200130113943406](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200130113943406.png)
+![image-20200130113943406](images/image-20200130113943406.png)
 
 
 

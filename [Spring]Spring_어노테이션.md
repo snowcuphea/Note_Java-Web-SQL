@@ -2,11 +2,11 @@
 
 ### 자꾸 xml파일을 추가해야 해서 불편한 상황 => 어노테이션으로 해결
 
-![image-20200123152702864](C:/Users/LG/Desktop/Note/images/image-20200123152702864.png)
+![image-20200123152702864](images/image-20200123152702864.png)
 
-![image-20200123152733072](C:/Users/LG/Desktop/Note/images/image-20200123152733072.png)
+![image-20200123152733072](images/image-20200123152733072.png)
 
-![image-20200123152844428](C:/Users/LG/Desktop/Note/images/image-20200123152844428.png)
+![image-20200123152844428](images/image-20200123152844428.png)
 
 ctrl + space 하면 context관련 태그가 생긴 것을 확인할 수 있다. 
 
@@ -30,7 +30,7 @@ ctrl + space 하면 context관련 태그가 생긴 것을 확인할 수 있다.
 
 이게 없다고해서 추가해줘야한다. 
 
-![image-20200123153705623](C:/Users/LG/Desktop/Note/images/image-20200123153705623.png)
+![image-20200123153705623](images/image-20200123153705623.png)
 
 추가해 주자
 
@@ -38,7 +38,7 @@ ctrl + space 하면 context관련 태그가 생긴 것을 확인할 수 있다.
 
 추가해준 뒤에 또 오류가 뜬다
 
-![image-20200123153805001](C:/Users/LG/Desktop/Note/images/image-20200123153805001.png)
+![image-20200123153805001](images/image-20200123153805001.png)
 
 이것은 xml에서 경로가 잘못된 것이므로 맞게 수정해준다.
 
